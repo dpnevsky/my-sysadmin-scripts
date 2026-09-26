@@ -1,0 +1,9 @@
+services:
+  monitoring:
+    build: .
+    working_dir: /data
+    volumes:
+      - monitor-data:/data
+
+volumes:
+  monitor-data:
