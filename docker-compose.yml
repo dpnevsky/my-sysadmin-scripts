@@ -2,6 +2,8 @@ services:
   monitoring:
     build: .
     working_dir: /data
+    ports:
+      - "8080:8080"
     volumes:
       - monitor-data:/data
 
