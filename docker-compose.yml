@@ -1,6 +1,7 @@
 services:
   monitoring:
     build: .
+    container_name: my-app
     working_dir: /data
     ports:
       - "8080:8080"
